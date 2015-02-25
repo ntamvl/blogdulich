@@ -57,24 +57,26 @@ if ( post_password_required() )
 	<?php
 	$commenter = wp_get_current_commenter();
 	$req = get_option( 'require_name_email' );
-	$aria_req = ( $req ? " aria-required='true'" : '' );	
+	$aria_req = ( $req ? " aria-required='true'" : '' );
+	$required_text = sprintf( ' ' . __('Những field bắt buộc đuợc đánh dấu %s'), '<span class="required">*</span>' );
 	$args = array(
 	'id_form' => 'commentform',
 	'id_submit' => 'submit-comment',
-	'title_reply' => __( 'Leave a Reply' ),
-	'title_reply_to' => __( 'Leave a Reply to %s' ),
+	'title_reply' => __( 'Gởi ý kiến của bạn' ),
+	'title_reply_to' => __( 'Gởi ý kiến cho %s' ),
 	'cancel_reply_link' => __( 'Cancel Reply' ),
-	'label_submit' => __( 'Post Comment' ),
-	'comment_field' => '<p class="comment-form-comment"><textarea id="comment" placeholder="'.__('Comment...', 'theme').'" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+	'label_submit' => __( 'Gửi ý kiến' ),
+	'comment_field' => '<p class="comment-form-comment"><textarea id="comment" placeholder="'.__('Nội dung ý kiến của bạn...', 'theme').'" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
 	'must_log_in' => '<p class="must-log-in">' .  sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
 	'logged_in_as' => '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
+	'comment_notes_before' => '<p class="comment-notes">' . __( 'Email của bạn sẽ không đuợc công khai.' ) . ( $req ? $required_text : '' ) . '</p>',
 	'comment_notes_after' => '',
 	'fields' => apply_filters( 'comment_form_default_fields', array(
-		'author' => '<input id="author" name="author" type="text" placeholder="'.__('Name (required)', 'theme').'" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />',
-		'email' => '<input id="email" name="email" type="text" placeholder="'.__('Email (required)', 'theme').'" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />',
+		'author' => '<input id="author" name="author" type="text" placeholder="'.__('Họ tên (*)', 'theme').'" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />',
+		'email' => '<input id="email" name="email" type="text" placeholder="'.__('Email (*)', 'theme').'" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />',
 		'url' => '<input id="url" name="url" type="text" placeholder="'.__('Website', 'theme').'" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" />' ) ) );
 	?>
-	
+
 	<?php comment_form($args); ?>
 
 </div><!-- #comments .comments-area -->
