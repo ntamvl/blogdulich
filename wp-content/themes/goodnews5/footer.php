@@ -109,7 +109,7 @@
 		<?php if  (function_exists('dynamic_sidebar') && dynamic_sidebar('footer3')){ }else { ?>
 	        <?php } ?>
 			</div>
-	    
+
     	    <?php } elseif ($footer_layout == 'twop_half') { ?>
 	    		<div class="one_fourth">
 		<?php if  (function_exists('dynamic_sidebar') && dynamic_sidebar('footer1')){ }else { ?>
@@ -206,7 +206,7 @@
 		<?php if  (function_exists('dynamic_sidebar') && dynamic_sidebar('footer3')){ }else { ?>
 	        <?php } ?>
 			</div>
-			
+
 			<div class="one_third last">
 		<?php if  (function_exists('dynamic_sidebar') && dynamic_sidebar('footer4')){ }else { ?>
 	        <?php } ?>
@@ -259,14 +259,14 @@
 		<?php if  (function_exists('dynamic_sidebar') && dynamic_sidebar('footer4')){ }else { ?>
 	        <?php } ?>
 			</div>
-	    
+
 	    <div class="one_third last">
 		<?php if  (function_exists('dynamic_sidebar') && dynamic_sidebar('footer5')){ }else { ?>
 	        <?php } ?>
 			</div>
-	    <?php } ?>    
+	    <?php } ?>
 
-        <div class="clear"></div>                    
+        <div class="clear"></div>
                 </div> <!--// footer inner-->
             </footer> <!--//footer-->
 <?php } ?>
@@ -278,8 +278,8 @@
                     if (mom_option('copyrights_right') == 'social') {
                             get_template_part('elements/social', 'icons');
                         } else {
-                            if ( has_nav_menu( 'footer' ) ) { 
-                                wp_nav_menu ( array( 'menu_class' => 'footer_menu','container'=> 'ul', 'theme_location' => 'footer' )); 
+                            if ( has_nav_menu( 'footer' ) ) {
+                                wp_nav_menu ( array( 'menu_class' => 'footer_menu','container'=> 'ul', 'theme_location' => 'footer' ));
                             }
                         }
                     ?>

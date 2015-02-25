@@ -370,11 +370,14 @@ if($categories){
 	}
 }
 	$output = '<div class="mom-post-meta '.$class.'">';
-	$author = mom_option('post_meta-author') == 1 ? '<span class="author vcard">'.__('Viết bởi:', 'theme').' <span class="fn"><a href="'.$author_link.'">'.get_the_author_meta( 'display_name' ).'</a></span></span>': '';
-	$date = mom_option('post_meta-date') == 1 ? '<span>'.__('on:', 'theme').' <time datetime="'.get_the_time('c').'" itemprop="datePublished" class="updated">'.get_mom_date_format().'</time></span>': '';
+	// $author = mom_option('post_meta-author') == 1 ? '<span class="author vcard">'.__('Viết bởi:', 'theme').' <span class="fn"><a href="'.$author_link.'">'.get_the_author_meta( 'display_name' ).'</a></span></span>': '';
+  $author = '';
+	$date = mom_option('post_meta-date') == 1 ? '<span>'.__('Ngày đăng:', 'theme').' <time datetime="'.get_the_time('c').'" itemprop="datePublished" class="updated">'.get_mom_date_format().'</time></span>': '';
 	//$date = mom_option('post_meta-date') == 1 ? '<span>'.__('The last Update:', 'theme').' <time datetime="'.get_the_time('c').'" itemprop="datePublished" class="updated">'. get_post_modified_time(mom_option('date_format')).'</time></span>': '';
-	$cat = mom_option('post_meta-cat') == 1 ? '<span>'.__('Danh mục', 'theme').': '.trim($cats, $separator).'</span>': '';
-	$comments = mom_option('post_meta-comments') == 1 ? '<span>'.$write_comments.'</span>': '';
+	// $cat = mom_option('post_meta-cat') == 1 ? '<span>'.__('Danh mục', 'theme').': '.trim($cats, $separator).'</span>': '';
+  $cat = '';
+	// $comments = mom_option('post_meta-comments') == 1 ? '<span>'.$write_comments.'</span>': '';
+  $comments = '';
 	if ($display == 'date_comments') {
 		$output .= $date.$comments;
 	} else {
