@@ -786,7 +786,7 @@ if (mom_option('site_width') == 'wide') {
 			$(".gallery-post-slider a[rel^='prettyphoto']").prettyPhoto({deeplinking: false});
 	});
   </script>
-  	<div class="feature-slider gallery-post-slider <?php echo $wide_class; ?>">
+  	<div class="feature-slider gallery-post-slider overlay <?php echo $wide_class; ?>">
 		<?php if ($arrows != false) { ?>
 		<div class="fs-drection-nav">
 			<span class="fsd-prev"><i class="fa-icon-angle-left"></i></span>

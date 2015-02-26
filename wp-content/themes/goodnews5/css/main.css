@@ -639,9 +639,10 @@ box-shadow: 0 0 0 0 #FFFFFF;
 transition: all 0.4s ease-in-out 0s;
 -moz-backface-visibility: hidden;
 outline: 1px solid transparent;
+opacity: 1;
 }
 .no-touch a img:hover {
-    opacity: 0.8;
+    opacity: 0.5;
 
 }
 .header a img:hover {
@@ -2366,7 +2367,7 @@ padding: 0;
     position: relative;
     max-height: 380px;
     overflow: hidden;
-    background: url(../images/loader.png) no-repeat center;
+    background: url(../images/loader.png) no-repeat center #000;
 }
 .feature-slider ul.fslides li {
     position: relative;
@@ -2416,16 +2417,20 @@ body:not(.both-sides-true) .feature-slider.fs-wide ul.fslides li {
 }
 .feature-slider li .slide-caption h2 a {
     color: #fff;
+    opacity: 1 !important;
+    z-index: 1000;
 }
 
 .feature-slider li .slide-caption h1 a {
     color: #fff;
+    opacity: 1 !important;
 }
 
 .feature-slider li .slide-caption p {
-    color: #ffffff;
+    color: #fff;
     font-size: 16px;
     margin-bottom: 0;
+    opacity: 1 !important;
 }
 
 .feature-slider .fs-nav {
@@ -9156,7 +9161,7 @@ box-sizing: content-box !important;
 /*my form search*/
 .my-search-form {
     position: relative;
-    background: none repeat scroll 0 0 #f0f0f0;
+    background: none repeat scroll 0 0 #fff;
 }
 .my-search-form input {
     padding-right: 45px;
@@ -9194,4 +9199,28 @@ box-sizing: content-box !important;
 
 .post-views-label, .post-views-count {
   color: #8e8e8e !important;
+}
+
+.overlay {
+    background: none repeat scroll 0 0 #000;
+    overflow: hidden;
+}
+
+.overlay a img, .overlay a img{
+  opacity: 0.7;
+}
+
+.logo a img {
+  opacity: 1;
+}
+
+.caroufredsel_wrapper > img {
+  opacity: 0.6 !important;
+}
+
+.fslides li {
+  background-color: #000 !important;
+}
+.fslides li img {
+  opacity: 0.6 !important;
 }

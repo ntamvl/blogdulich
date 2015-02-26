@@ -12,7 +12,7 @@
 <?php if (is_singular()) { ?>
 <meta property="og:image" content="<?php echo mom_post_image('medium'); ?>"/>
 <?php
-    $mom_og_title = get_the_title(); 
+    $mom_og_title = get_the_title();
 if (function_exists('is_buddypress') && is_buddypress()) {
     if ( bp_is_user() && !bp_is_register_page() ) {
 			$mom_og_title = bp_get_displayed_user_fullname();
@@ -76,8 +76,8 @@ if (function_exists('is_buddypress') && is_buddypress()) {
 			    $default_r_logo = MOM_IMG.'/retina_logo-'.mom_option('mom_color_skin').'.png';
 			}
 			if (is_singular()) {
-			    // custom logo 
-                                    $the_logo = get_post_meta(get_the_ID(), 'mom_custom_logo', true);    
+			    // custom logo
+                                    $the_logo = get_post_meta(get_the_ID(), 'mom_custom_logo', true);
                                     if ($the_logo == '') {
                                     global $post;
 					if (has_category('',$post->ID)) {
@@ -86,13 +86,13 @@ if (function_exists('is_buddypress') && is_buddypress()) {
 					$cat_data2 = get_option( 'category_'.$cat_id);
 					$the_logo = isset($cat_data2['custom_logo']) ? $cat_data2['custom_logo'] : '';
 					}
-                                    }   
+                                    }
                                     $r_logo = '';
                                     if ($the_logo == '') {
                                     $the_logo = mom_option('logo_img', 'url');
                                     $r_logo = mom_option('retina_logo_img', 'url');
                                     }
-			    
+
 			    //custom banner
 			    $header_banner = get_post_meta(get_the_ID(), 'mom_Header_banner', true);
 			    if ($header_banner == '')  {
@@ -107,7 +107,7 @@ if (function_exists('is_buddypress') && is_buddypress()) {
 				$the_logo = mom_option('logo_img', 'url');
 				$r_logo = mom_option('retina_logo_img', 'url');
 			    }
-			    
+
 			    //custom banner
 			    $header_banner = isset($cat_data['custom_banner']) ? $cat_data['custom_banner'] :'';
 			    if ($header_banner == '')  {
@@ -117,7 +117,7 @@ if (function_exists('is_buddypress') && is_buddypress()) {
 			    $the_logo = mom_option('logo_img', 'url');
 			    $r_logo = mom_option('retina_logo_img', 'url');
 			    $header_banner = mom_option('header_banner_id');
-			} 
+			}
 		    ?>
                         <?php if($the_logo != '') { ?>
                         <img src="<?php echo $the_logo; ?>" alt="<?php bloginfo('name'); ?>" width="<?php echo mom_option('logo_img', 'width'); ?>" height="<?php echo mom_option('logo_img', 'height'); ?>" />
@@ -144,7 +144,7 @@ if (function_exists('is_buddypress') && is_buddypress()) {
                     </div>
                     <?php if (mom_option('header_banner') != false) { ?>
                     <div class="header-right">
-                                  <?php 
+                                  <?php
                                         echo do_shortcode('[ad id="'.$header_banner.'"]');
                                   ?>
                     </div> <!--header right-->
@@ -154,7 +154,7 @@ if (function_exists('is_buddypress') && is_buddypress()) {
 				echo '<div class="header-right header-right_custom-content" style="margin-top:'.$mt.'px">'.do_shortcode(mom_option('header_custom_content')).'</div>';
 			    }
 		    } ?>
-		    
+
                 <div class="clear"></div>
                 </div>
             </header>
@@ -190,7 +190,7 @@ if (function_exists('is_buddypress') && is_buddypress()) {
 			$nt_clock_only = mom_option('news_ticker_time_clock_only');
 
 			$nt_icon = mom_option('news_ticker_icon');
-			
+
 			echo do_shortcode('[news_ticker title="'.$nt_title.'" display="'.$nt_display.'" category="'.$nt_category.'" tag="'.$nt_tag.'" custom="'.$nt_custom.'" count="'.$nt_count.'" time="'.$nt_time.'" icon="'.$nt_icon['url'].'" clock_only="'.$nt_clock_only.'" time_format="'.$nt_time_format.'"]');
 		    }
 		?>
