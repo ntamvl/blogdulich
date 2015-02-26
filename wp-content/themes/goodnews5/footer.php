@@ -273,7 +273,10 @@
 <?php if (mom_option('hide_footer_c') != true ) { ?>
             <div class="copyrights-area">
                 <div class="inner">
-                    <p class="copyrights-text"><?php echo do_shortcode(mom_option('copyrights')); ?></p>
+                    <p class="copyrights-text">
+                    	<?php echo do_shortcode(mom_option('copyrights')); ?>
+                  	</p>
+                  	<span style="float: right;"><?php echo do_shortcode("[ad id='1228']"); ?></span>
                     <?php
                     if (mom_option('copyrights_right') == 'social') {
                             get_template_part('elements/social', 'icons');

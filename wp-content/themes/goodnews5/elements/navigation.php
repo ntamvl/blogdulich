@@ -55,10 +55,9 @@
 			    <?php mom_login_widget(mom_option('nav_login_register_link'), mom_option('nav_login_reset_link')); ?>
 			    </div>
 			</div>
-		    <?php } ?>		    
-		    <?php if (mom_option('nav_search') == 1) { ?> 
-                    <span class="nav-button nav-search">
-<!--                        <i class="fa-icon-search"></i>-->
+		    <?php } ?>
+		    <?php if (mom_option('nav_search') == 1) { ?>
+                    <span id="my-search-pc" class="nav-button nav-search">
                         <div class="default-search-form my-search-form">
                             <form method="get" action="<?php echo home_url(); ?>">
                                 <input class="sf" type="text" placeholder="<?php _e('Tìm kiếm...', 'theme'); ?>" autocomplete="off" name="s">
@@ -67,7 +66,11 @@
                         </div>
                     </span>
 
-                    <div class="nb-inner-wrap search-wrap border-box hide">
+                    <span id="my-search-mobile" class="nav-button nav-search hide">
+                        <i class="fa-icon-search"></i>
+                    </span>
+
+                    <div id="my-search-autocomplete" class="nb-inner-wrap search-wrap border-box">
                         <div class="nb-inner sw-inner">
                         <div class="search-form mom-search-form">
                             <form method="get" action="<?php echo home_url(); ?>">
@@ -81,14 +84,14 @@
                     </div> <!--sw inner-->
                     </div> <!--search wrap-->
                     <?php } ?>
-		
+
 		    </div> <!--nav-buttons-->
-                    
+
                 </div>
                 </div> <!--nav inner-->
             </nav> <!--Navigation-->
 	    <div class="boxed-content-wrapper clearfix">
-            <?php if (mom_option('nav_shadow') == 1) { ?> 
+            <?php if (mom_option('nav_shadow') == 1) { ?>
             <div class="nav-shaddow"></div>
             <?php } else { ?>
             <div style="height:20px;"></div>

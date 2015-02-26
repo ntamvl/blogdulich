@@ -19,6 +19,9 @@ a.pp_expand, a.pp_contract, .pp_hoverContainer, .pp_gallery, .pp_top, .pp_bottom
 #pp_full_res img { width: 100%!important; height: auto!important; }
 .pp_details { width: 94%!important; padding-left: 3%; padding-right: 4%; padding-top: 10px; padding-bottom: 10px; background-color: #fff; margin-top: -2px!important; }
 a.pp_close { right: 10px!important; top: 10px!important; }
+/*my search pc and mobile*/
+#my-search-pc {display: none !important; visibility: hidden !important;}
+#my-search-mobile {display: block !important; visibility: visible !important;}
 }
 
 /* ==========================================================================
@@ -1246,7 +1249,8 @@ body.sticky_navigation_on.layout-boxed.layout-boxed-content #navigation.sticky-n
 
 .navigation-inner {
     height: 44px;
-    background: #f0f0f0;
+    /*background: #f0f0f0;*/
+    background: #373c43;
     border-bottom: 1px solid #dfdfdf;
     position: relative;
 }
@@ -1280,7 +1284,8 @@ body.sticky_navigation_on.layout-boxed.layout-boxed-content #navigation.sticky-n
 }
 #navigation .main-menu > li > a {
     padding: 0 15px;
-    color: #373c43;
+    /*color: #373c43;*/
+    color: #fff;
     line-height: 44px;
     height: 44px;
     display: block;
@@ -1299,6 +1304,7 @@ body.sticky_navigation_on.layout-boxed.layout-boxed-content #navigation.sticky-n
 }
 #navigation .main-menu > li:hover > a, #navigation .main-menu > li.current-menu-item > a, .navigation_highlight_ancestor #navigation .main-menu > li.current-menu-ancestor > a, .navigation_highlight_ancestor #navigation .main-menu > li.current-menu-parent > a {
     background-color: #fff;
+    color: #000;
 }
 
 #navigation .main-menu li a i {
@@ -5020,8 +5026,8 @@ body:not(.both_sidebars_same_width) .secondary-sidebar .current-day-weather .cd-
    ========================================================================== */
 .copyrights-area {
   background: #373c43;
-  height: 50px;
-  line-height: 50px;
+  height: 150px;
+  line-height: 150px;
   overflow: hidden;
 }
 .copyrights-text {
