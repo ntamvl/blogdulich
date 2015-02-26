@@ -24,7 +24,7 @@
             <div class="main_container">
             <div class="main-col">
                 <div class="category-title">
-                    <h1 class="post-tile entry-title"><?php single_cat_title( '', true ); ?></h1>
+                    <h1 class="post-tile entry-title category-title"><?php single_cat_title( '', true ); ?></h1>
                     <?php mom_breadcrumb(); ?>
                     <?php if (is_category() && mom_option('cat_rss') == 1) { ?>
                     <a class="bc-rss" target="_blank" href="<?php echo esc_url(home_url()); ?>?cat=<?php echo get_query_var('cat'); ?>&feed=rss2"><i class="fa-icon-rss"></i></a>
