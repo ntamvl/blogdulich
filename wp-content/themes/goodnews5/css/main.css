@@ -4214,12 +4214,13 @@ box-sizing: border-box;
     line-height: 28px;
     padding: 0 10px;
     background: #f8f8f8;
-    border: 1px solid #eaeaea;
+    border: 1px solid #373c43;
     margin-bottom: 5px;
     margin-right: 5px;
     text-transform: capitalize;
     color: #969696;
     font-size: 14px !important;
+    box-shadow: 1px 1px 1px #888888;
 }
 .tagcloud a:hover {
     background: #fff;
