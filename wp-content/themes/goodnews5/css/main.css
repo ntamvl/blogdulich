@@ -9235,3 +9235,38 @@ box-sizing: content-box !important;
 .category-title h1 {
   font-size: 20px !important;
 }
+
+/* ccs for top view widget */
+.box-rippon-text-2 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 8px;
+    left: 8px;
+    z-index: 200;
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    font-family: showcard;
+    background-color: #faa400;
+}
+.box-rippon-text-2 .post-views-count {
+    color: #fff !important;
+    position: relative;
+    top: 2px;
+    font-weight: bold;
+}
+.mpw-post {
+    position: relative;
+}
+
+.round-box {
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+    -webkit-border-radius: 12px;
+
+    /* Firefox 1-3.6 */
+    -moz-border-radius: 12px;
+
+    /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+    border-radius: 12px;
+}

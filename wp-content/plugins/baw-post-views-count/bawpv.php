@@ -163,7 +163,10 @@ class WP_Widget_Most_Viewed_Posts extends WP_Widget {
 				if (mom_post_image() != false) {
 					$is_img = 'has-feature-image';
 				?>
-			    <div class="post-img main-sidebar-element"><a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide'); ?></a></div>
+			    <div class="post-img main-sidebar-element">
+                    <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide'); ?></a>
+                </div>
+                <span class="box-rippon-text-2 round-box"><?php echo do_shortcode('[post_view]'); ?></span>
 			    <div class="post-img sec-sidebar-element"><a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide-hd'); ?></a><span class="post-format-icon"></span></div>
 			    <?php } ?>
 			   <div class="details <?php echo $is_img; ?>">
