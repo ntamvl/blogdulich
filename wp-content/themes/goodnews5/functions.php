@@ -29,6 +29,11 @@ function momt_shortcodes_to_exempt_from_wptexturize($shortcodes) {
 // //Add the filter for RSS feed content
 // add_filter('the_content_feed', 'featured_image_in_rss');
 
-update_option('siteurl', 'http://blogdulich.flightbooking.vn');
-update_option('home', 'http://blogdulich.flightbooking.vn');
+// update_option('siteurl', 'http://blogdulich.flightbooking.vn');
+// update_option('home', 'http://blogdulich.flightbooking.vn');
+
+update_option('siteurl', 'http://flightbooking.vn/blog');
+update_option('home', 'http://flightbooking.vn/blog');
+
+remove_filter('template_redirect', 'redirect_canonical');
 ?>

@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns:fb="http://ogp.me/ns/fb#" class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
     <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,7 +10,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php if (is_singular()) { ?>
-<meta property="og:image" content="<?php echo mom_post_image('medium'); ?>"/>
+
 <?php
     $mom_og_title = get_the_title();
 if (function_exists('is_buddypress') && is_buddypress()) {
@@ -21,11 +21,7 @@ if (function_exists('is_buddypress') && is_buddypress()) {
     }
 }
 ?>
-<meta property="og:title" content="<?php echo $mom_og_title; ?>"/>
-<meta property="og:type" content="article"/>
-<meta property="og:description" content="<?php global $post; echo wp_html_excerpt(strip_shortcodes($post->post_content), 200); ?>"/>
-<meta property="og:url" content="<?php the_permalink(); ?>"/>
-<meta property="og:site_name" content="<?php echo get_bloginfo( 'name' ) ?>"/>
+
 <?php } ?>
 
 <?php if(mom_option('enable_responsive') != true) { ?>
@@ -56,6 +52,18 @@ if (function_exists('is_buddypress') && is_buddypress()) {
 <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.async = true;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <?php do_action('mom_first_on_body'); ?>
         <!--[if lt IE 7]>
             <p class="browsehappy"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'theme'); ?></p>

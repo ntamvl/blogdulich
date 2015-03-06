@@ -75,8 +75,8 @@ class mom_widget_posts extends WP_Widget {
 			   <div class="details <?php echo $is_img; ?>">
 			    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                    <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
-                   <!-- <div class="mom-post-meta mom-w-meta">
-                   </div> -->
+                   <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
+                   <div class="mom-post-meta mom-w-meta"></div>
                <div class="mom-post-meta mom-w-meta">
 				<span datetime="<?php the_time('c'); ?>" class="entry-date">
                     <?php mom_date_format(); ?>

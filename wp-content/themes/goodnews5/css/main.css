@@ -24,7 +24,7 @@ a.pp_close { right: 10px!important; top: 10px!important; }
 #my-search-mobile {display: block !important; visibility: visible !important; border-left-width: 0px !important; border-right-width: 0px !important;}
 }
 
-#my-search-pc, #my-search-mobile {border-left-width: 0px !important; border-right-width: 0px !important;}
+#my-search-pc, #my-search-mobile {border-left-width: 0px !important; border-right-width: 0px !important; }
 
 /* ==========================================================================
  *                Fonts
@@ -786,7 +786,7 @@ opacity: 1;
    ========================================================================== */
 input,select,textarea, .mom-select {
     background: #f8f8f8;
-    border: 1px solid #eaeaea;
+    border: 1px solid #B6B6B8;
     padding: 0;
     margin-bottom:10px;
     width:100%;
@@ -3319,14 +3319,14 @@ body:not(.both-sides-true) .nip-wide.new-in-pics.nip-big .nip-recent
     color: #f09217;
 }
 .sidebar .widget {
-        padding: 20px;
+        padding: 6px;
 }
 
 .sidebar .widget .widget-head {
     background: #f8f8f8;
-    padding: 16px 20px;
+    padding: 10px 20px;
     border-bottom: 1px solid #eaeaea;
-    margin: -20px;
+    margin: -20px -7px 20px;
     margin-bottom: 20px;
 }
 .sidebar.secondary-sidebar .widget .widget-head {
@@ -3356,7 +3356,7 @@ body:not(.both-sides-true) .nip-wide.new-in-pics.nip-big .nip-recent
 }
 .default-search-form input {
     padding-right: 45px;
-    height: 38px;
+    height: 20px;
     margin-bottom: 0;
 }
 .default-search-form button {
@@ -3830,13 +3830,14 @@ body:not(.both_sidebars_same_width) .secondary-sidebar .mom-w-meta .mom_review_s
 .button, #commentform #submit-comment, input[type="submit"], #bbpress-forums #bbp-single-user-details+ul li a {
     display: inline-block;
     padding: 0 16px;
-    line-height: 36px;
-    border: 0;
-    background: #4a525d;
-    color: #ffffff;
+    line-height: 20px;
+    border: 0px solid #B6B6B8;
+    background: #fff;
+    color: #000;
     font-weight: 400;
     border-style: solid;
-    border-width: 0;
+    border-left: 0;
+    /*border-width: 0;*/
 }
 .button:hover {
 	color: #f09217;
@@ -4218,9 +4219,8 @@ box-sizing: border-box;
     margin-bottom: 5px;
     margin-right: 5px;
     text-transform: capitalize;
-    color: #969696;
+    color: #000;
     font-size: 14px !important;
-    box-shadow: 1px 1px 1px #888888;
 }
 .tagcloud a:hover {
     background: #fff;
@@ -9257,6 +9257,14 @@ box-sizing: content-box !important;
     top: 2px;
     font-weight: bold;
 }
+
+.title-index {
+    color: #fff !important;
+    font-weight: bolder;
+    position: relative;
+    top: 1px;
+}
+
 .mpw-post {
     position: relative;
 }
@@ -9270,4 +9278,49 @@ box-sizing: content-box !important;
 
     /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
     border-radius: 12px;
+}
+
+/*.widget_search {
+  border: 1px solid #B6B6B8 !important;
+}
+
+.widget_search input, select, textarea, .mom-select {
+    background: none repeat scroll 0 0 #f8f8f8;
+    border: 0px solid #b6b6b8 !important;
+    border-radius: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 100%;
+}
+
+.widget_search .button {
+    border: 0px solid #b6b6b8 !important;
+}
+*/
+
+.fb_edge_widget_with_comment span.fb_edge_comment_widget
+{
+    z-index:100000 !important;
+}
+/*.fb-like iframe {
+    max-width: inherit;
+}*/
+
+/* the same issue with the "send" button */
+
+/*.fb-send iframe {
+    max-width: inherit;
+}*/
+
+.fb_iframe_widget>span { /*width: 640px !important;*/ overflow:visible !important; width:450px !important; margin-right:-375px; z-index:100000 !important;}
+.fb-like-box iframe { width: 640px !important; overflow:visible !important; }
+.fb-like span{ clear: both; overflow:visible !important; width:450px !important; margin-right:-375px; z-index:100010 !important;}
+
+.search-form input {
+  background: none repeat scroll 0 0 #fff !important;
+  border: 0 solid #b6b6b8 !important;
+}
+
+.widget.widget_search {
+  border: 1px solid #B6B6B8 !important;
 }

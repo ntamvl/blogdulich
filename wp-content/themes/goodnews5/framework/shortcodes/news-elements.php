@@ -199,6 +199,7 @@ if (in_array('both-sidebars',$classes)) {
                             <div class="slide-caption <?php echo $caption_style.$nav_class; ?>">
                                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                 <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
+                                <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
 				<?php if ($caption_length != 0) { ?>
                                 <P>
 					<?php
@@ -641,7 +642,8 @@ global $la;
 				<?php } ?>
                                 <div class="news-summary <?php echo $is_img; ?>">
                                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                    <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+                                    <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
+                                    <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
                                     <div class="mom-post-meta nb-item-meta"></div>
                                     <div class="mom-post-meta nb-item-meta">
                                     <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
@@ -953,7 +955,8 @@ global $la;
 				<?php } ?>
                                 <div class="news-summary">
                                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                    <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+                                    <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
+                                    <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
                                     <div class="mom-post-meta nb-item-meta"></div>
                                     <div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
@@ -1021,7 +1024,8 @@ global $la;
 				<?php } ?>
                                         <div class="details <?php echo $is_img; ?>">
 				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+                <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
+                <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
                 <div class="mom-post-meta nb-item-meta"></div>
                 <div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
@@ -1089,7 +1093,8 @@ global $la;
 				<?php } ?>
                                 <div class="news-summary">
                                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                    <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+                                    <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
+                                    <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
                                     <div class="mom-post-meta nb-item-meta"></div>
                                     <div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
@@ -1149,7 +1154,8 @@ global $la;
 		<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); if ($unique_posts) {$do_unique_posts[] = get_the_ID();} ?>
                                     <li <?php post_class(); ?> itemscope itemtype="http://schema.org/Article">
 				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                        <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+                                        <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
+                                        <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
                                         <div class="mom-post-meta nb-item-meta"></div>
 				<div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
@@ -1231,7 +1237,8 @@ if (in_array('both-sidebars',$classes)) {
 				<?php } ?>
                                 <div class="news-summary">
                                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                    <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+                                    <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
+                                    <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
                                     <div class="mom-post-meta nb-item-meta"></div>
                                     <div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
@@ -1299,8 +1306,9 @@ if (in_array('both-sidebars',$classes)) {
 		 <?php } ?>
                                         <div class="details <?php echo $is_img; ?>">
 				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                            <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
-                                            <div class="mom-post-meta nb-item-meta"></div> -->
+                                            <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>-->
+                                            <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
+                                            <div class="mom-post-meta nb-item-meta"></div>
 				<div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
                                     <a href="<?php comments_link(); ?>" class="comment_number"><?php comments_number(__('No comments', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?></a>
