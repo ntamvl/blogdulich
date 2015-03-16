@@ -19,7 +19,9 @@
                             <i class="fa-icon-align-justify mh-icon"></i> <span class="the_menu_holder_area"><i class="dmh-icon"></i><?php _e('Menu', 'theme'); ?></span><i class="mh-caret"></i>
                         </div>
                         <?php //wp_nav_menu ( array( 'menu_class' => 'device-menu' ,'container'=> 'ul', 'theme_location' => 'main', 'walker' => new mom_custom_Walker()  )); ?>
-                        <?php wp_nav_menu ( array( 'menu_class' => 'main-menu main-default-menu','container'=> 'ul', 'theme_location' => 'main', 'walker' => new mom_custom_Walker()  )); ?>
+                        <?php wp_nav_menu ( array( 'menu_class' => 'main-menu main-default-menu mom_visibility_desktop','container'=> 'ul', 'theme_location' => 'main', 'walker' => new mom_custom_Walker()  )); ?>
+                        <div class="clear: both;"></div>
+                        <?php wp_nav_menu ( array( 'menu_class' => 'device-menu mom_visibility_device','container'=> 'ul', 'theme_location' => 'main', 'walker' => new mom_custom_Walker()  )); ?>
                         </div>
                         <?php
                         if (file_exists(get_template_directory() . '/demo/demo.php')) {

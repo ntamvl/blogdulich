@@ -32,8 +32,11 @@ function momt_shortcodes_to_exempt_from_wptexturize($shortcodes) {
 // update_option('siteurl', 'http://blogdulich.flightbooking.vn');
 // update_option('home', 'http://blogdulich.flightbooking.vn');
 
-update_option('siteurl', 'http://flightbooking.vn/blog');
-update_option('home', 'http://flightbooking.vn/blog');
+// update_option('siteurl', 'http://flightbooking.vn/blog');
+// update_option('home', 'http://flightbooking.vn/blog');
+
+update_option('siteurl','http://' . $_SERVER['HTTP_HOST']);
+update_option('home','http://' . $_SERVER['HTTP_HOST']);
 
 remove_filter('template_redirect', 'redirect_canonical');
 ?>

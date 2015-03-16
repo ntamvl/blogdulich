@@ -1264,7 +1264,7 @@ body.sticky_navigation_on.layout-boxed.layout-boxed-content #navigation.sticky-n
 #navigation ul.main-menu {
     height: 44px;
     margin-right: 50px;
-    display: block !important;
+    /*display: block !important;*/
 }
 #navigation ul {
            margin: 0;
@@ -9300,7 +9300,7 @@ box-sizing: content-box !important;
 
 .fb_edge_widget_with_comment span.fb_edge_comment_widget
 {
-    z-index:100000 !important;
+    /*z-index:100000 !important;*/
 }
 /*.fb-like iframe {
     max-width: inherit;
@@ -9312,9 +9312,9 @@ box-sizing: content-box !important;
     max-width: inherit;
 }*/
 
-.fb_iframe_widget>span { /*width: 640px !important;*/ overflow:visible !important; width:450px !important; margin-right:-375px; z-index:100000 !important;}
+.fb_iframe_widget>span { /*width: 640px !important;*/ overflow:visible !important; width:450px !important; margin-right:-375px; }
 .fb-like-box iframe { width: 640px !important; overflow:visible !important; }
-.fb-like span{ clear: both; overflow:visible !important; width:450px !important; margin-right:-375px; z-index:100010 !important;}
+.fb-like span{ clear: both; overflow:visible !important; width:450px !important; margin-right:-375px; }
 
 .search-form input {
   background: none repeat scroll 0 0 #fff !important;
@@ -9323,4 +9323,9 @@ box-sizing: content-box !important;
 
 .widget.widget_search {
   border: 1px solid #B6B6B8 !important;
+}
+
+.fb_edge_widget_with_comment span.fb_edge_comment_widget {
+  top: 15px !important;
+  left: -250px !important;
 }
