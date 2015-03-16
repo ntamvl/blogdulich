@@ -1238,7 +1238,7 @@ body.sticky_navigation_on #navigation.sticky-nav {
     position: fixed;
 -webkit-box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
 box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
-z-index: 5000;
+z-index: 500000;
 }
 body.sticky_navigation_on.layout-boxed #navigation.sticky-nav {
     width: 1022px;
@@ -5050,6 +5050,8 @@ body:not(.both_sidebars_same_width) .secondary-sidebar .current-day-weather .cd-
 }
 .copyrights-text {
     margin-bottom: 0;
+    line-height: 20px;
+    margin-top: 56px;
 }
 .copyrights-area  .mom-social-icons {
     float: right;
