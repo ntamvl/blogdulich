@@ -137,7 +137,11 @@ class WP_Widget_Most_Viewed_Posts extends WP_Widget {
 									'order'=>$order,
 									'author'=>$author_id,
 									'category__not_in'=>$exclude_cat,
-									'post_type'=> apply_filters( 'baw_count_views_widget_post_types', $bawpvc_options['post_types'] )
+									'post_type'=> apply_filters( 'baw_count_views_widget_post_types', $bawpvc_options['post_types'] ),
+									/*'date_query' => array(
+							        'column' => 'post_date',
+							        'after' => '- 30 days'
+							    )*/
 								)
 						);
 		if ($r->have_posts()) :

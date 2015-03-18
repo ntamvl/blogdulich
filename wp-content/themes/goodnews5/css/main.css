@@ -1263,7 +1263,7 @@ body.sticky_navigation_on.layout-boxed.layout-boxed-content #navigation.sticky-n
 }
 #navigation ul.main-menu {
     height: 44px;
-    margin-right: 50px;
+    /*margin-right: 50px;*/
     /*display: block !important;*/
 }
 #navigation ul {
@@ -2731,7 +2731,7 @@ height: 30px;
     color: #F09217;
 }
 .news-box .recent-news {
-    overflow: hidden;
+    overflow: visible;
 }
 .news-box .news-image {
     position: relative;
@@ -3071,13 +3071,13 @@ body.no-post-format-icons .post-format-icon {
  *                News box 3
    ========================================================================== */
 .nb-style3 .nb-content {
-    overflow: hidden;
+    overflow: visible;
     margin-right: -20px;
 }
 .nb-style3 .recent-news {
     float: left;
     width: 304px;
-    padding: 20px;
+    padding: 20px 20px 20px 0;
     padding-left: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -3091,14 +3091,14 @@ body.no-post-format-icons .post-format-icon {
     background: #f8f8f8;
     border: 0px solid #eaeaea;
     border-left-width:1px;
-    padding-bottom: 200px;
-    margin-bottom: -200px;
+    padding-bottom: 40px;
+    /*margin-bottom: -200px;*/
 }
 
 .nb-style3 .older-articles ul li {
     padding:15px;
     border-bottom: 1px solid #eaeaea;
-    overflow: hidden;
+    overflow: visible;
 }
 .nb-style3 .older-articles ul li:last-child {
     border-bottom: 0;
@@ -3704,6 +3704,7 @@ box-sizing: content-box;
 .sidebar .mom-posts-widget .mpw-post {
     padding: 15px;
     border-bottom: 1px solid #eaeaea;
+    padding-bottom: 30px;
 }
 .sidebar .mom-posts-widget .mpw-post:last-child {
     border-bottom: 0;
@@ -3717,7 +3718,7 @@ box-sizing: content-box;
     margin-left: 101px;
 }
 .mom-posts-widget .mpw-post {
-    overflow: hidden;
+    overflow: visible;
 }
 #footer .mom-posts-widget .mpw-post {
     margin-bottom: 20px;
@@ -5158,7 +5159,7 @@ body.bp-user .mom_breadcrumb .breadcrumbs-plus .separator:last-child {
    ========================================================================== */
 .post-img {
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 .blog-post {
     position: relative;
@@ -9314,20 +9315,40 @@ box-sizing: content-box !important;
     max-width: inherit;
 }*/
 
-.fb_iframe_widget>span { /*width: 640px !important;*/ overflow:visible !important; width:450px !important; margin-right:-375px; }
-.fb-like-box iframe { width: 640px !important; overflow:visible !important; }
-.fb-like span{ clear: both; overflow:visible !important; width:450px !important; margin-right:-375px; }
-
-.search-form input {
-  background: none repeat scroll 0 0 #fff !important;
-  border: 0 solid #b6b6b8 !important;
+.fb_iframe_widget>span {
+  /*width: 640px !important;*/
+  overflow:visible !important;
+  width:450px !important;
+  margin-right:-375px;
 }
-
-.widget.widget_search {
-  border: 1px solid #B6B6B8 !important;
+.fb-like-box iframe {
+  width: 640px !important;
+  overflow:visible !important;
+}
+.fb-like span{
+  clear: both;
+  overflow:visible !important;
+  width:450px !important;
+  margin-right:-375px;
 }
 
 .fb_edge_widget_with_comment span.fb_edge_comment_widget {
   top: 15px !important;
   left: -250px !important;
 }
+
+.fb_iframe_widget iframe {
+  position: absolute;
+  max-width: none;
+}
+
+/** begin search form  */
+.widget.widget_search {
+  border: 1px solid #B6B6B8 !important;
+}
+
+.search-form input {
+  background: none repeat scroll 0 0 #fff !important;
+  border: 0 solid #b6b6b8 !important;
+}
+

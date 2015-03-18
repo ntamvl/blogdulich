@@ -127,7 +127,7 @@ if (function_exists('is_buddypress') && is_buddypress()) {
 			    $header_banner = mom_option('header_banner_id');
 			}
 		    ?>
-            <h1 alt="Kinh nghiệm du lịch và đặt vé máy bay giá rẻ">
+            <?php if ( get_the_ID() == 1212 ) { ?> <h1 alt="Kinh nghiệm du lịch và đặt vé máy bay giá rẻ"> <?php } ?>
                         <?php if($the_logo != '') { ?>
                         <img src="<?php echo $the_logo; ?>" alt="<?php bloginfo('name'); ?>" width="<?php echo mom_option('logo_img', 'width'); ?>" height="<?php echo mom_option('logo_img', 'height'); ?>" />
                         <?php } else { ?>
@@ -142,7 +142,7 @@ if (function_exists('is_buddypress') && is_buddypress()) {
                         <img class="mom_retina_logo" src="<?php echo $default_r_logo; ?>" width="241" height="60" alt="<?php bloginfo('name'); ?>" />
                             <?php } ?>
                     <?php } ?>
-            </h1>
+            <?php if ( get_the_ID() == 1212 ) { ?> </h1> <?php } ?>
 
 		    <?php } else {
 			if (mom_option('logo_text') != '') {
