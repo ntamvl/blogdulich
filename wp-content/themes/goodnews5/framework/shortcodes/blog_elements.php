@@ -21,7 +21,7 @@ if ($style == 'm2') { ?>
         <div class="bp-head">
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
-            <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
+            <!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
             <div class="mom-post-meta nb-item-meta"></div>
             <?php mom_posts_meta('bp-meta'); ?>
         </div> <!--blog post head-->
@@ -138,8 +138,8 @@ if ($style == 'm2') { ?>
     <div class="bp-entry">
         <div class="bp-head">
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
-            <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
+            <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+            <!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
             <div class="mom-post-meta nb-item-meta"></div>
             <?php mom_posts_meta('bp-meta'); ?>
         </div> <!--blog post head-->
@@ -160,7 +160,7 @@ if ($style == 'm2') { ?>
 
                                             echo wp_html_excerpt(strip_shortcodes($excerpt), $excerpt_length, '...');
                                     ?>
-				   <a href="<?php the_permalink(); ?>" class="read-more-link"><?php _e('Read more', 'theme'); ?> <?php echo $da; ?></a>
+				   <a href="<?php the_permalink(); ?>" class="read-more-link"><?php _e('Xem thêm', 'theme'); ?> <?php echo $da; ?></a>
 				</P>
                     <?php } ?>
         </div> <!--details-->

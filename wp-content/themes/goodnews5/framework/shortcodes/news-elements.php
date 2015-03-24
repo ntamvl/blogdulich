@@ -199,7 +199,7 @@ if (in_array('both-sidebars',$classes)) {
                             <div class="slide-caption <?php echo $caption_style.$nav_class; ?>">
                                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                 <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
-                                <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
+                                <!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
 				<?php if ($caption_length != 0) { ?>
                                 <P>
 					<?php
@@ -647,7 +647,7 @@ global $la;
                                     <div class="mom-post-meta nb-item-meta"></div>
                                     <div class="mom-post-meta nb-item-meta">
                                     <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
-<!--                                    <a href="--><?php //comments_link(); ?><!--" class="comment_number">--><?php //comments_number(__('No comments', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?><!--</a>-->
+<!--                                    <a href="--><?php //comments_link(); ?><!--" class="comment_number">--><?php //comments_number(__('Không có bình luận', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?><!--</a>-->
                                        <span class="post-views-label">Luợt xem: </span><?php echo do_shortcode('[post_view]'); ?>
 					<?php mom_show_review_score(); ?>
                                    </div> <!--meta-->
@@ -819,7 +819,7 @@ global $la;
                                    <div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
                                     <span class="category"><?php _e('In', 'theme'); ?>: <?php the_category(', '); ?></span>
-                                    <a href="<?php comments_link(); ?>" class="comment_number"><?php comments_number(__('No comments', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?></a>
+                                    <a href="<?php comments_link(); ?>" class="comment_number"><?php comments_number(__('Không có bình luận', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?></a>
 				    <?php mom_show_review_score(); ?>
                                    </div> <!--meta-->
                                 </div> <!--rn title-->
@@ -886,13 +886,13 @@ global $la;
 				if (mom_post_image() != false) {
 					$is_img = 'has-feature-image';
 				?>
-                 <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide', 'small-wide-hd'); ?></a>
+                 <!-- <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide', 'small-wide-hd'); ?></a> -->
 		 <?php } ?>
                                         <div class="details <?php echo $is_img; ?>">
 				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?>1111</a></h4>
 				<div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
-                                    <a href="<?php comments_link(); ?>" class="comment_number"><?php comments_number(__('No comments', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?></a>
+                                    <a href="<?php comments_link(); ?>" class="comment_number"><?php comments_number(__('Không có bình luận', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?></a>
                                    </div> <!--meta-->
 					<?php mom_show_review_score(); ?>
                                    </div>
@@ -956,12 +956,12 @@ global $la;
                                 <div class="news-summary">
                                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                     <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
-                                    <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
-                                    <div class="mom-post-meta nb-item-meta"></div>
+                                    <!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
+                                    <!-- <div class="mom-post-meta nb-item-meta"></div> -->
                                     <div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
-<!--                                    <a href="--><?php //comments_link(); ?><!--" class="comment_number">--><?php //comments_number(__('No comments', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?><!--</a>-->
-                                       <span class="post-views-label">Luợt xem: </span><?php echo do_shortcode('[post_view]'); ?>
+<!--                                    <a href="--><?php //comments_link(); ?><!--" class="comment_number">--><?php //comments_number(__('Không có bình luận', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?><!--</a>-->
+                                       <span class="post-views-label">Lượt xem: </span><?php echo do_shortcode('[post_view]'); ?>
 				    <?php mom_show_review_score(); ?>
                                    </div> <!--meta-->
                                 <P>
@@ -1020,17 +1020,18 @@ global $la;
 				if (mom_post_image() != false) {
 					$is_img = 'has-feature-image';
 				?>
-                 <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide', 'small-wide-hd'); ?></a>
+				<!-- for style 3 -->
+                 <!-- <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide', 'small-wide-hd'); ?></a> -->
 				<?php } ?>
                                         <div class="details <?php echo $is_img; ?>">
 				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                 <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
-                <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
-                <div class="mom-post-meta nb-item-meta"></div>
+                <!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
+                <!-- <div class="mom-post-meta nb-item-meta"></div> -->
                 <div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
-<!--                                    <a href="--><?php //comments_link(); ?><!--" class="comment_number">--><?php //comments_number(__('No comments', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?><!--</a>-->
-                                        <span class="post-views-label">Luợt xem: </span><?php echo do_shortcode('[post_view]'); ?>
+<!--                                    <a href="--><?php //comments_link(); ?><!--" class="comment_number">--><?php //comments_number(__('Không có bình luận', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?><!--</a>-->
+                                        <span class="post-views-label">Lượt xem: </span><?php echo do_shortcode('[post_view]'); ?>
                                    </div> <!--meta-->
 					<?php mom_show_review_score(); ?>
                                    </div>
@@ -1094,12 +1095,12 @@ global $la;
                                 <div class="news-summary">
                                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                     <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
-                                    <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
-                                    <div class="mom-post-meta nb-item-meta"></div>
+                                    <!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
+                                    <!-- <div class="mom-post-meta nb-item-meta"></div> -->
                                     <div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
-<!--                                    <a href="--><?php //comments_link(); ?><!--" class="comment_number">--><?php //comments_number(__('No comments', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?><!--</a>-->
-                                        <span class="post-views-label">Luợt xem: </span><?php echo do_shortcode('[post_view]'); ?>
+<!--                                    <a href="--><?php //comments_link(); ?><!--" class="comment_number">--><?php //comments_number(__('Không có bình luận', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?><!--</a>-->
+                                        <span class="post-views-label">Lượt xem: </span><?php echo do_shortcode('[post_view]'); ?>
 				    <?php mom_show_review_score(); ?>
                                    </div> <!--meta-->
                                 <P>
@@ -1155,12 +1156,12 @@ global $la;
                                     <li <?php post_class(); ?> itemscope itemtype="http://schema.org/Article">
 				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                                         <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
-                                        <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
+                                        <!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
                                         <div class="mom-post-meta nb-item-meta"></div>
 				<div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
-<!--                                    <a href="--><?php //comments_link(); ?><!--" class="comment_number">--><?php //comments_number(__('No comments', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?><!--</a>-->
-                                        <span class="post-views-label">Luợt xem: </span><?php echo do_shortcode('[post_view]'); ?>
+<!--                                    <a href="--><?php //comments_link(); ?><!--" class="comment_number">--><?php //comments_number(__('Không có bình luận', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?><!--</a>-->
+                                        <span class="post-views-label">Lượt xem: </span><?php echo do_shortcode('[post_view]'); ?>
 					<?php mom_show_review_score(); ?>
                                    </div> <!--meta-->
                                     </li>
@@ -1238,12 +1239,12 @@ if (in_array('both-sidebars',$classes)) {
                                 <div class="news-summary">
                                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                     <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
-                                    <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
-                                    <div class="mom-post-meta nb-item-meta"></div>
+                                    <!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
+                                    <!-- <div class="mom-post-meta nb-item-meta"></div> -->
                                     <div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
-<!--                                    <a href="--><?php //comments_link(); ?><!--" class="comment_number">--><?php //comments_number(__('No comments', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?><!--</a>-->
-                                       <span class="post-views-label">Luợt xem: </span><?php echo do_shortcode('[post_view]'); ?>
+<!--                                    <a href="--><?php //comments_link(); ?><!--" class="comment_number">--><?php //comments_number(__('Không có bình luận', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?><!--</a>-->
+                                       <span class="post-views-label">Lượt xem: </span><?php echo do_shortcode('[post_view]'); ?>
 				    <?php mom_show_review_score(); ?>
                                    </div> <!--meta-->
                                 <P>
@@ -1302,16 +1303,17 @@ if (in_array('both-sidebars',$classes)) {
 				if (mom_post_image() != false) {
 					$is_img = 'has-feature-image';
 				?>
-                 <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide', 'small-wide-hd'); ?></a>
+				<!-- for 1 column, style two columns -->
+                 <!-- <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide', 'small-wide-hd'); ?></a> -->
 		 <?php } ?>
                                         <div class="details <?php echo $is_img; ?>">
 				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                                             <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>-->
-                                            <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
-                                            <div class="mom-post-meta nb-item-meta"></div>
+                                            <!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
+                                            <!-- <div class="mom-post-meta nb-item-meta"></div> -->
 				<div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
-                                    <a href="<?php comments_link(); ?>" class="comment_number"><?php comments_number(__('No comments', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?></a>
+                                    <a href="<?php comments_link(); ?>" class="comment_number"><?php comments_number(__('Không có bình luận', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?></a>
                                    </div> <!--meta-->
 					<?php mom_show_review_score(); ?>
 					</div>
@@ -1375,7 +1377,7 @@ if (in_array('both-sidebars',$classes)) {
                                    <div class="mom-post-meta nb-item-meta">
                                 <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
                                     <span class="category"><?php _e('In', 'theme'); ?>: <?php the_category(', '); ?></span>
-                                    <a href="<?php comments_link(); ?>" class="comment_number"><?php comments_number(__('No comments', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?></a>
+                                    <a href="<?php comments_link(); ?>" class="comment_number"><?php comments_number(__('Không có bình luận', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?></a>
 				    <?php mom_show_review_score(); ?>
                                    </div> <!--meta-->
                                 </div> <!--rn title-->

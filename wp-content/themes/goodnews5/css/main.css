@@ -1277,7 +1277,7 @@ body.sticky_navigation_on.layout-boxed.layout-boxed-content #navigation.sticky-n
 }
 #navigation .main-menu > li {
     float:  left;
-    font-size: 15px;
+    font-size: 13px;
     border: 0px solid #dfdfdf;
     border-left-width: 1px;
     white-space: nowrap;
@@ -2411,7 +2411,7 @@ body:not(.both-sides-true) .feature-slider.fs-wide ul.fslides li {
     padding-top: 28px;
 }
 .feature-slider li .slide-caption h2 {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 5px;
     font-weight: 700;
     color: #fff;
@@ -2430,7 +2430,7 @@ body:not(.both-sides-true) .feature-slider.fs-wide ul.fslides li {
 
 .feature-slider li .slide-caption p {
     color: #fff;
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 0;
     opacity: 1 !important;
 }
@@ -2639,7 +2639,7 @@ height: 30px;
     position: relative;
 }
 .news-box .recent-news h3 {
-    font-size: 17px;
+    font-size: 15px;
 }
 .news-box .nb-footer {
     line-height: 38px;
@@ -2678,7 +2678,7 @@ height: 30px;
 }
 
 .mom-post-meta {
-    font-size: 12px;
+    font-size: 11px;
     color: #c6c6c6;
     line-height: 1.4;
     margin-bottom: 10px;
@@ -2731,7 +2731,7 @@ height: 30px;
     color: #F09217;
 }
 .news-box .recent-news {
-    overflow: visible;
+    overflow: hidden;
 }
 .news-box .news-image {
     position: relative;
@@ -3071,7 +3071,7 @@ body.no-post-format-icons .post-format-icon {
  *                News box 3
    ========================================================================== */
 .nb-style3 .nb-content {
-    overflow: visible;
+    overflow: hidden;
     margin-right: -20px;
 }
 .nb-style3 .recent-news {
@@ -3096,9 +3096,9 @@ body.no-post-format-icons .post-format-icon {
 }
 
 .nb-style3 .older-articles ul li {
-    padding:15px;
+    padding:10px;
     border-bottom: 1px solid #eaeaea;
-    overflow: visible;
+    overflow: hidden;
 }
 .nb-style3 .older-articles ul li:last-child {
     border-bottom: 0;
@@ -3109,13 +3109,15 @@ body.no-post-format-icons .post-format-icon {
     width: 90px;
 }
 .nb-style3 .older-articles ul li .details.has-feature-image {
-    margin-left: 103px;
+    /*margin-left: 103px;*/
+    margin-left: 0;
 }
 .nb-style3 .older-articles ul li .details a {
     margin-bottom: 10px;
 }
 .nb-style3 .older-articles .nb-item-meta {
     margin-bottom: 2px;
+    margin-top: -8px;
 }
 
 /* ==========================================================================
@@ -3155,7 +3157,7 @@ body:not(.both-sides-true) .nb-2col.nb2c-wide {
 }
 
 .nb-2col .older-articles ul li {
-    padding: 15px;
+    padding: 15px 15px 0;
     border-top: 1px solid #eaeaea;
     overflow: hidden;
 }
@@ -3166,13 +3168,15 @@ body:not(.both-sides-true) .nb-2col.nb2c-wide {
     width: 90px;
 }
 .nb-2col .older-articles ul li .details.has-feature-image {
-    margin-left: 103px;
+    /*margin-left: 103px;*/
+    margin-left: 0px;
 }
 .nb-2col .older-articles ul li .details a {
     margin-bottom: 10px;
 }
 .nb-2col .older-articles .nb-item-meta {
     margin-bottom: 2px;
+    margin-top: -8px;
 }
 
 /* ==========================================================================
@@ -3702,7 +3706,7 @@ box-sizing: content-box;
     margin: -20px;
 }
 .sidebar .mom-posts-widget .mpw-post {
-    padding: 15px;
+    padding: 15px 15px 15px 20px;
     border-bottom: 1px solid #eaeaea;
     padding-bottom: 30px;
 }
@@ -3712,13 +3716,13 @@ box-sizing: content-box;
 .sidebar .mom-posts-widget .mpw-post .star-rating {
     display: inline-block;
     position: relative;
-    top: -5px;
+    top: 5px;
 }
 .mom-posts-widget .mpw-post .details.has-feature-image {
     margin-left: 101px;
 }
 .mom-posts-widget .mpw-post {
-    overflow: visible;
+    overflow: hidden;
 }
 #footer .mom-posts-widget .mpw-post {
     margin-bottom: 20px;
@@ -3738,7 +3742,7 @@ box-sizing: content-box;
     height: 59px;
 }
 .mom-posts-widget .mpw-post h4 {
-    font-size: 14px;
+    font-size: 12px;
     position: relative;
     top: -1px;
 }
@@ -4210,18 +4214,19 @@ box-sizing: border-box;
     overflow: hidden;
     margin-right: 5px;
     margin-bottom: -5px;
+    margin-top: -15px;
 }
 .tagcloud a {
-    float: left;
+    /*float: left;*/
     line-height: 28px;
-    padding: 0 10px;
+    /*padding: 0 10px;*/
     background: #f8f8f8;
-    border: 1px solid #373c43;
+    /*border: 1px solid #373c43;*/
     margin-bottom: 5px;
     margin-right: 5px;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     color: #000;
-    font-size: 14px !important;
+    /*font-size: 14px !important;*/
 }
 .tagcloud a:hover {
     background: #fff;
@@ -5035,8 +5040,8 @@ body:not(.both_sidebars_same_width) .secondary-sidebar .current-day-weather .cd-
    ========================================================================== */
 .copyrights-area {
   background: #373c43;
-  height: 150px;
-  line-height: 150px;
+  /*height: 150px;
+  line-height: 150px;*/
   overflow: hidden;
 }
 .copyrights-text {
@@ -5051,8 +5056,8 @@ body:not(.both_sidebars_same_width) .secondary-sidebar .current-day-weather .cd-
 }
 .copyrights-text {
     margin-bottom: 0;
-    line-height: 20px;
-    margin-top: 56px;
+    line-height: 50px;
+    /*margin-top: 56px;*/
 }
 .copyrights-area  .mom-social-icons {
     float: right;
@@ -5072,7 +5077,7 @@ body:not(.both_sidebars_same_width) .secondary-sidebar .current-day-weather .cd-
     float: right;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 15px 0;
 }
 .footer_menu li {
     float: left;
@@ -9352,3 +9357,6 @@ box-sizing: content-box !important;
   border: 0 solid #b6b6b8 !important;
 }
 
+.news-summary p {
+  font-size: 12px;
+}

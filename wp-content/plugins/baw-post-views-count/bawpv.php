@@ -138,10 +138,10 @@ class WP_Widget_Most_Viewed_Posts extends WP_Widget {
 									'author'=>$author_id,
 									'category__not_in'=>$exclude_cat,
 									'post_type'=> apply_filters( 'baw_count_views_widget_post_types', $bawpvc_options['post_types'] ),
-									/*'date_query' => array(
+									'date_query' => array(
 							        'column' => 'post_date',
 							        'after' => '- 30 days'
-							    )*/
+							    )
 								)
 						);
 		if ($r->have_posts()) :
@@ -176,14 +176,13 @@ class WP_Widget_Most_Viewed_Posts extends WP_Widget {
 			    <?php } ?>
 			   <div class="details <?php echo $is_img; ?>">
 			    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-		    					<fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
+		    					<!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
                    <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
-                   <!-- <div class="mom-post-meta mom-w-meta">
-                   </div> -->
+                   <!-- <div class="mom-post-meta mom-w-meta"></div> -->
                <div class="mom-post-meta mom-w-meta">
 				<span datetime="<?php the_time('c'); ?>" class="entry-date">
                     <?php mom_date_format(); ?>
-                    <span class="post-views-label">Luợt xem: </span>	<?php echo do_shortcode('[post_view]'); ?>
+                    <span class="post-views-label">Lượt xem: </span>	<?php echo do_shortcode('[post_view]'); ?>
                 </span>
 			    <?php mom_show_review_score(); ?>
 			    </div>

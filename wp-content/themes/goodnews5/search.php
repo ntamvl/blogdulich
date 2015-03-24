@@ -2,14 +2,14 @@
 <?php
 		global $da;
                 $cats = get_categories();
-                
+
                 $category = '';
                 $year = '';
                 $monthnum = '';
                 $filter = '';
                 $sortby = '';
                 if (isset($_GET['category'])) {
-                           $category = $_GET['category'];     
+                           $category = $_GET['category'];
                 }
                 if (isset($_GET['year'])) {
                                 $year = (int)$_GET['year'];
@@ -17,7 +17,7 @@
                 if (isset($_GET['month'])) {
                                 $monthnum = (int)$_GET['month'];
                 }
-                
+
                 if (isset($_GET['format'])) {
                                 $filter = $_GET['format'];
                 }
@@ -25,7 +25,7 @@
                 if (isset($_GET['sortby'])) {
                                 $sortby = $_GET['sortby'];
                 }
-                
+
                 //$months = range(1,12);
                 $months = array (
                                 '01' => __('January', 'theme'),
@@ -59,7 +59,7 @@
                     <?php if (mom_option('search_breadcrumbs') == 1) { ?>
                 <div class="category-title">
 <div class="mom_breadcrumb breadcrumb breadcrumbs"><div class="breadcrumbs-plus">
-<span xmlns:v="http://rdf.data-vocabulary.org/#"><a class="home" href="<?php echo esc_url(home_url()); ?>" typeof="v:Breadcrumb"><?php _e('Home', 'theme'); ?></a> <span class="separator"><i class="sep fa-icon-double-angle-right"></i></span><?php echo __('Search results for', 'theme').' "'.$s.'"'; ?></span></div></div>
+<span xmlns:v="http://rdf.data-vocabulary.org/#"><a class="home" href="<?php echo esc_url(home_url()); ?>" typeof="v:Breadcrumb"><?php _e('Trang chủ', 'theme'); ?></a> <span class="separator"><i class="sep fa-icon-double-angle-right"></i></span><?php echo __('Kết quả tìm kiếm cho ', 'theme').' "'.$s.'"'; ?></span></div></div>
                 </div>
                 <?php } ?>
                     <?php if (mom_option('search_advanced') == 1) { ?>
@@ -121,7 +121,7 @@
                     <?php } ?>
                     <?php
                                 $search_page_style = mom_option('search_style');
-                                $count = mom_option('search_count'); 
+                                $count = mom_option('search_count');
                                 $args = '';
 				       global $wp_query;
         if ( get_query_var('paged') ) { $paged = get_query_var('paged'); }
@@ -147,7 +147,7 @@ else { $paged = 1; }
                          <?php mom_pagination($query->max_num_pages); ?>
 
                         <?php  else:  ?>
-                        
+
 <div class="base-box blog-post default-blog-post">
     <div class="bp-entry">
         <div class="bp-head">
@@ -164,18 +164,18 @@ else { $paged = 1; }
     <div class="clear"></div>
 </div> <!--blog post-->
         <?php  endif; ?>
-        
+
                 <?php } else { ?>
-                    <?php if ( $query->have_posts() ) : ?>                
+                    <?php if ( $query->have_posts() ) : ?>
                 <div class="news-box base-box">
                     <header class="nb-header">
-                        <h2 class="nb-title"><span><?php echo __('Search results for', 'theme').' "'.$s.'"'; ?></span></h2>
+                        <h2 class="nb-title"><span><?php echo __('Kết quả tìm kiếm cho ', 'theme').' "'.$s.'"'; ?></span></h2>
                     </header> <!--nb header-->
                     <div class="nb-content">
-                        <div class="news-list">                
+                        <div class="news-list">
                         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                                                         <article <?php post_class('nl-item'); ?>>
-                                                        
+
 				<?php
 				$is_img = '';
 				if (mom_post_image() != false) {
@@ -190,7 +190,7 @@ else { $paged = 1; }
                                    <div class="mom-post-meta nb-item-meta">
                                     <span datetime="<?php the_time('c'); ?>" class="entry-date"><?php mom_date_format(); ?></span>
                                     <a href="<?php comments_link(); ?>" class="comment_number"><?php comments_number(__('No comments', 'theme'), __('1 Comment', 'theme'), __('% Comments')); ?></a>
-					<?php mom_show_review_score(); ?>				   
+					<?php mom_show_review_score(); ?>
                                    </div> <!--meta-->
                                 <P>
 					<?php
@@ -198,7 +198,7 @@ else { $paged = 1; }
 						if ($excerpt == false) {
 						$excerpt = get_the_content();
 						}
-						
+
 						echo wp_html_excerpt(strip_shortcodes($excerpt), 150, '...');
 					?>
 				   <a href="<?php the_permalink(); ?>" class="read-more-link"><?php _e('Read more', 'theme'); ?> <?php echo $da; ?></a>
@@ -208,7 +208,7 @@ else { $paged = 1; }
                         <?php endwhile; ?>
                         </div> <!--news list-->
                     </div>
-                    
+
                 </div> <!--news box-->
                          <?php mom_pagination($query->max_num_pages); ?>
                         <?php  else:  ?>
@@ -233,7 +233,7 @@ else { $paged = 1; }
                 </div> <!--main column-->
                 <?php get_sidebar('secondary'); ?>
             <div class="clear"></div>
-            </div> <!--main container-->            
+            </div> <!--main container-->
                 <?php get_sidebar(); ?>
         </div> <!--main inner-->
 <?php get_footer(); ?>

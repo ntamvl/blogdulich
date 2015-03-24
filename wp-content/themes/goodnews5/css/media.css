@@ -614,6 +614,16 @@ and (max-device-width : 1024px) {
      content: ' ';
 }
 
+.widget_search {
+    display: none;
+    visibility: hidden;
+}
+
+.header-right {
+    display: none;
+    visibility: hidden;
+}
+
 } /*End ipad*/
 /*------------------------------------------------------------------------------*/
 /*                    Width : 568 = iphone 5 landscape
@@ -911,6 +921,11 @@ h6 {
 .asf-el.date,
 .asf-el.filter {
     display: none;
+}
+
+.widget_search {
+    display: none;
+    visibility: hidden;
 }
 
 }

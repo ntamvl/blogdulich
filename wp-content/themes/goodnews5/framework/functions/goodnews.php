@@ -495,13 +495,13 @@ function mom_single_post_content () {
 
         $format = get_post_format();
 ?>
-<?php mom_single_post_format($format); ?>
+<?php //mom_single_post_format($format); ?>
 <h1 class="post-tile entry-title" itemprop="name"><?php the_title(); ?></h1>
 <div class="post-view">
-    <span class="post-views-label">Luợt xem: </span><?php echo do_shortcode('[post_view]'); ?>
+    <span class="post-views-label">Lượt xem: </span><?php echo do_shortcode('[post_view]'); ?>
 </div>
-<!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
-<fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like>
+<iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+<!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
 <div class="line-space"></div>
 <?php mom_posts_meta('single-post-meta'); ?>
 <div class="entry-content">
