@@ -727,7 +727,7 @@ class CRP_Widget extends WP_Widget {
 
 			$output .= $after_widget;
 
-			echo $output;
+			if (!is_page('1212')) echo $output;
 		}
 	} //ending function widget
 }

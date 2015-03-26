@@ -2411,7 +2411,7 @@ body:not(.both-sides-true) .feature-slider.fs-wide ul.fslides li {
     padding-top: 28px;
 }
 .feature-slider li .slide-caption h2 {
-    font-size: 20px;
+    font-size: 32px;
     margin-bottom: 5px;
     font-weight: 700;
     color: #fff;
@@ -2678,7 +2678,7 @@ height: 30px;
 }
 
 .mom-post-meta {
-    font-size: 11px;
+    font-size: 12px;
     color: #c6c6c6;
     line-height: 1.4;
     margin-bottom: 10px;
@@ -3703,7 +3703,7 @@ box-sizing: content-box;
  *                Posts Widget
    ========================================================================== */
 .sidebar .mom-posts-widget {
-    margin: -20px;
+    margin: -5px;
 }
 .sidebar .mom-posts-widget .mpw-post {
     padding: 15px 15px 15px 20px;
@@ -5822,7 +5822,7 @@ h2.single-title:after, .comment-reply-title:after {
 }
 .np-posts ul li .details h3 {
     font-size:15px;
-    color:#7e7e7e;
+    color:#000;
     line-height:1.2;
     margin-bottom:0;
 }
@@ -9357,6 +9357,41 @@ box-sizing: content-box !important;
   border: 0 solid #b6b6b8 !important;
 }
 
+.search-form input:hover {
+  background: none repeat scroll 0 0 #fff !important;
+  border: 0 solid #b6b6b8 !important;
+}
+
+.search-form input:active {
+  background: none repeat scroll 0 0 #fff !important;
+  border: 0 solid #b6b6b8 !important;
+}
+
 .news-summary p {
   font-size: 12px;
+}
+
+.newsletter-email {
+  border: 1px solid #ccc;
+}
+
+.newsletter-email input:hover {
+  border: 1px solid #ccc;
+  clear: both;
+}
+
+.single-title h2 {
+  color: #000;
+}
+
+.single-title {
+  color: #000;
+}
+
+.category-title h1 {
+  color: #fff;
+}
+
+.category-title {
+  color: #fff;
 }

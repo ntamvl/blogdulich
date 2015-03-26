@@ -91,6 +91,7 @@ class mom_widget_posts extends WP_Widget {
 			<?php  else:  ?>
 			<!-- Else in here -->
 			<?php  endif; ?>
+      <div style="text-align: right; padding: 5px 15px 5px 0;"><a href="<?php echo get_permalink(get_page_by_path('bai-viet-moi-nhat')); ?>">>> Xem thêm</a></div>
 			<?php wp_reset_query(); ?>
                                     </div>
 <?php
@@ -180,5 +181,4 @@ function form( $instance ) {
 
    <?php
 }
-
- } //end class
+} //end class

@@ -142,6 +142,7 @@ if ($style == 'm2') { ?>
             <!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
             <div class="mom-post-meta nb-item-meta"></div>
             <?php mom_posts_meta('bp-meta'); ?>
+            <!-- <span class="post-views-label">Lượt xem: </span>  <?php echo do_shortcode('[post_view]'); ?> -->
         </div> <!--blog post head-->
         <div class="bp-details">
 	<?php if (mom_post_image() != false) { ?>

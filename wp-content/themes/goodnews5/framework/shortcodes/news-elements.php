@@ -671,7 +671,7 @@ global $la;
                     </div>
 		    <?php if ($show_more == 'on') { ?>
                     <footer class="nb-footer">
-                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $count; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="news_list" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>" data-format="<?php echo $sm_format; ?>" data-excerpt_length="<?php echo $excerpt_length; ?>" data-image_size="<?php echo $image_size; ?>"><?php _e('Show More','theme'); ?><?php echo $la; ?></a>
+                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $count; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="news_list" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>" data-format="<?php echo $sm_format; ?>" data-excerpt_length="<?php echo $excerpt_length; ?>" data-image_size="<?php echo $image_size; ?>"><?php _e('Xem thêm','theme'); ?><?php echo $la; ?></a>
                     </footer>
 		    <?php } ?>
 
@@ -886,7 +886,7 @@ global $la;
 				if (mom_post_image() != false) {
 					$is_img = 'has-feature-image';
 				?>
-                 <!-- <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide', 'small-wide-hd'); ?></a> -->
+                 <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide', 'small-wide-hd'); ?></a>
 		 <?php } ?>
                                         <div class="details <?php echo $is_img; ?>">
 				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?>1111</a></h4>
@@ -906,7 +906,7 @@ global $la;
                     </div>
 		    <?php if ($show_more == 'on') { ?>
                     <footer class="nb-footer">
-                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $count+1; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="<?php echo $style; ?>" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>"><?php _e('Show More','theme'); ?> <?php echo $la; ?> </a>
+                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $count+1; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="<?php echo $style; ?>" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>"><?php _e('Xem thêm','theme'); ?> <?php echo $la; ?> </a>
                     </footer>
 		    <?php } ?>
 
@@ -1021,7 +1021,7 @@ global $la;
 					$is_img = 'has-feature-image';
 				?>
 				<!-- for style 3 -->
-                 <!-- <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide', 'small-wide-hd'); ?></a> -->
+                 <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide', 'small-wide-hd'); ?></a>
 				<?php } ?>
                                         <div class="details <?php echo $is_img; ?>">
 				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
@@ -1045,7 +1045,7 @@ global $la;
                     </div>
 		    <?php if ($show_more == 'on') { ?>
                     <footer class="nb-footer">
-                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $count+1; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="<?php echo $style; ?>" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>"><?php _e('Show More','theme'); ?> <?php echo $la; ?> </a>
+                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $count+1; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="<?php echo $style; ?>" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>"><?php _e('Xem thêm','theme'); ?> <?php echo $la; ?> </a>
                     </footer>
 		    <?php } ?>
 
@@ -1174,7 +1174,7 @@ global $la;
                     </div>
 		    <?php if ($show_more == 'on') { ?>
                     <footer class="nb-footer">
-                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $count+1; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="<?php echo $style; ?>" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>"><?php _e('Show More','theme'); ?> <?php echo $la; ?> </a>
+                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $count+1; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="<?php echo $style; ?>" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>"><?php _e('Xem thêm','theme'); ?> <?php echo $la; ?> </a>
                     </footer>
 		    <?php } ?>
 
@@ -1303,8 +1303,8 @@ if (in_array('both-sidebars',$classes)) {
 				if (mom_post_image() != false) {
 					$is_img = 'has-feature-image';
 				?>
-				<!-- for 1 column, style two columns -->
-                 <!-- <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide', 'small-wide-hd'); ?></a> -->
+				<!-- for 1 column, style two columns, style 1 -->
+                 <a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide', 'small-wide-hd'); ?></a>
 		 <?php } ?>
                                         <div class="details <?php echo $is_img; ?>">
 				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
@@ -1327,7 +1327,7 @@ if (in_array('both-sidebars',$classes)) {
                     </div>
 		    <?php if ($show_more == 'on') { ?>
                     <footer class="nb-footer">
-                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $count+1; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="<?php echo $style; ?>" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>"><?php _e('Show More','theme'); ?> <?php echo $la; ?> </a>
+                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $count+1; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="<?php echo $style; ?>" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>"><?php _e('Xem thêm','theme'); ?> <?php echo $la; ?> </a>
                     </footer>
 			<?php } ?>
 
@@ -1447,7 +1447,7 @@ if (in_array('both-sidebars',$classes)) {
                     </div>
 		    <?php if ($show_more == 'on') { ?>
                     <footer class="nb-footer">
-                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $count+1; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="<?php echo $style; ?>" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>"><?php _e('Show More','theme'); ?> <?php echo $la; ?> </a>
+                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $count+1; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="<?php echo $style; ?>" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>"><?php _e('Xem thêm','theme'); ?> <?php echo $la; ?> </a>
                     </footer>
 		    <?php } ?>
 
@@ -1551,7 +1551,7 @@ global $la;
                         </div>
                     </div> <!--nb content-->
                     <footer class="nb-footer">
-                        <a href="#" class="show-more"><?php _e('Show More', 'theme'); ?> <?php echo $la; ?> </a>
+                        <a href="#" class="show-more"><?php _e('Xem thêm', 'theme'); ?> <?php echo $la; ?> </a>
                     </footer>
 
                 </div> <!--news box -->
@@ -1794,7 +1794,7 @@ if (in_array('both-sidebars',$classes)) {
 		?>
 		    <?php if ($show_more == 'on') { ?>
                     <footer class="nb-footer">
-                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $offset; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="<?php echo 'npic'.$style; ?>" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>"><?php _e('Show More','theme'); ?> <?php echo $la; ?> </a>
+                        <a href="<?php echo $url; ?>" data-post_type="<?php echo $post_type; ?>" class="show-more-<?php echo $show_more_type; ?>" data-offset="<?php echo $offset; ?>" data-number_of_posts="<?php echo $count; ?>" data-display="<?php echo $display; ?>" data-category="<?php echo $category; ?>" data-tag="<?php echo $tag; ?>" data-nbs="<?php echo 'npic'.$style; ?>" data-sort="<?php echo $sort; ?>" data-orderby="<?php echo $orderby; ?>"><?php _e('Xem thêm','theme'); ?> <?php echo $la; ?> </a>
                     </footer>
 		<?php } ?>
 
