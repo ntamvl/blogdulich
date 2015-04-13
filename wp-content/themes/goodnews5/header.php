@@ -5,8 +5,12 @@
 <!--[if gt IE 8]><!--> <html xmlns:fb="http://ogp.me/ns/fb#" class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
     <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<?php if (!get_query_var('s')) { ?>
+  <title><?php wp_title( '|', true, 'right' ); ?></title>
+  <?php } else { ?>
+  <title><?php echo get_query_var('s'); ?></title>
+  <?php } ?>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php if (is_singular()) { ?>
@@ -52,16 +56,16 @@ if (function_exists('is_buddypress') && is_buddypress()) {
 <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-    <!-- <div id="fb-root"></div> -->
+    <div id="fb-root"></div>
     <script>
-      // (function(d, s, id) {
-      //   var js, fjs = d.getElementsByTagName(s)[0];
-      //   if (d.getElementById(id)) return;
-      //   js = d.createElement(s); js.id = id;
-      //   js.async = true;
-      //   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-      //   fjs.parentNode.insertBefore(js, fjs);
-      // }(document, 'script', 'facebook-jssdk'));
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.async = true;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     </script>
 
     <?php do_action('mom_first_on_body'); ?>

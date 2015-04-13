@@ -545,8 +545,11 @@ if (mom_option('post_bottom_ad') != '') {
                 //echo do_shortcode('[gap height="20"]');
 }
 if ($DAB != 1) {mom_author_box();}
-if ($DRP != 1) {mom_related_posts();}
-if ($DPC != 1) {comments_template();}
+// if ($DRP != 1) {mom_related_posts();}
+// if ($DPC != 1) {comments_template();}
+?>
+<div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="864" data-numposts="5" data-colorscheme="light"></div>
+<?php
 endwhile;
 wp_reset_query();
 }

@@ -175,7 +175,7 @@ class WP_Widget_Most_Viewed_Posts extends WP_Widget {
 			    <div class="post-img sec-sidebar-element"><a href="<?php the_permalink(); ?>"><?php mom_post_image_full('small-wide-hd'); ?></a><span class="post-format-icon"></span></div>
 			    <?php } ?>
 			   <div class="details <?php echo $is_img; ?>">
-			    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?> 0000 <?php echo $meta_key; ?></a></h4>
+			    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 		    					<!-- <fb:like href="<?php the_permalink(); ?>" layout="button_count" action="like" show_faces="true" share="true"></fb:like> -->
                    <!-- <iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe> -->
                    <!-- <div class="mom-post-meta mom-w-meta"></div> -->

@@ -13,9 +13,9 @@
 <?php get_header(); ?>
     <div class="inner">
         <?php if ( current_user_can('activate_plugins') ) {
-                //edit_post_link('Edit', '<div><p class="button gray_bt">', '</p></div>'); 
+                //edit_post_link('Edit', '<div><p class="button gray_bt">', '</p></div>');
         } ?>
-        
+
         <?php
             if (mom_option('post_top_ad') != '') {
                 echo do_shortcode('[ad id="'.mom_option('post_top_ad').'"]');
@@ -41,17 +41,17 @@
                         <?php mom_breadcrumb(); ?>
                 </div>
                 <?php } ?>
-<?php if ($custom_page) { 
-                        mom_single_post_content(); 
+<?php if ($custom_page) {
+                        mom_single_post_content();
 } else { ?>
                         <?php mom_single_post_content(); ?>
 <?php } ?>
             </div> <!--main column-->
             <?php get_sidebar('secondary'); ?>
             <div class="clear"></div>
-</div> <!--main container-->            
+</div> <!--main container-->
 <?php get_sidebar(); ?>
 <?php }// end full width ?>
             </div> <!--main inner-->
-            
+
 <?php get_footer(); ?>

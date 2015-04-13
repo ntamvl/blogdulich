@@ -1396,7 +1396,7 @@ if (in_array('both-sidebars',$classes)) {
 
 						echo wp_html_excerpt(strip_shortcodes($excerpt), 270, '...');
 					?>
-				   <a href="<?php the_permalink(); ?>" class="read-more-link"><?php _e('Read more', 'theme'); ?> <?php echo $da; ?></a>
+				   <a href="<?php the_permalink(); ?>" class="read-more-link"><?php _e('Xem chi tiết', 'theme'); ?> <?php echo $da; ?></a>
 				</P>
                                 </div>
                             </article>
